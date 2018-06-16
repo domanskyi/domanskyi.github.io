@@ -1,0 +1,528 @@
+:root {
+    --back-color: #f8f9f9;
+    --temp-blue: #10c9c3;
+    --progress-bg: #d8d8d8;
+    --desc-color: #787878;
+    --main-black: #191919;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500|Nunito+Sans');
+
+/**BASE STYLES**/
+
+html {
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.img-responsive {
+    display: block;
+    width: 100%;
+}
+
+
+/****/
+
+.section-header {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.875rem;
+    letter-spacing: 1.2px;
+    color: var(--main-black);
+}
+
+.section-description {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    line-height: 25px;
+    color: var(--desc-color);
+}
+
+
+/**CUSTOM**/
+
+
+/**header**/
+
+.parallax {
+    height: 100vh;
+    width: 100%;
+}
+
+nav {
+    position: fixed;
+    z-index: 1000;
+    background-color: rgba(248, 249, 249, 0.9);
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.logo-wrapper {
+    padding: 15px 0 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.menu {
+    display: flex;
+    flex-grow: 3;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu ul li {
+    padding: 0 15px;
+}
+
+.menu ul {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.menu a {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--main-black);
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1.3px;
+    transition: 0.5s;
+}
+
+.menu a:hover {
+    color: var(--temp-blue);
+}
+
+.header-text {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+.block {
+    padding: 0 50px;
+    max-width: 600px;
+}
+
+.block h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.375rem;
+    color: var(--main-black);
+    margin-bottom: 15px;
+}
+
+.block p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.125rem;
+    color: #fff;
+    line-height: 25px;
+    margin-bottom: 25px;
+}
+
+
+/**about**/
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-wrapper {
+    padding: 100px 0px;
+    max-width: 700px;
+    text-align: center;
+}
+
+.about-header,
+.about-desc {
+    margin-bottom: 20px;
+}
+
+
+/**skills**/
+
+.skills-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.skills-block {
+    width: calc(100% / 2);
+}
+
+.skill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--back-color);
+    padding: 0 50px;
+}
+
+.skill-container {
+    width: 100%;
+}
+
+.skills-header {
+    margin-bottom: 41px;
+    margin-top: 41px;
+}
+
+.progress-name {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.progress-name span {
+    margin-left: 17px;
+}
+
+progress {
+    width: 100%;
+    margin-bottom: 41px;
+    height: 3px;
+    background-color: var(--progress-bg);
+    border: 0px solid black;
+}
+
+progress::-webkit-progress-bar {
+    background-color: var(--progress-bg);
+}
+
+progress::-moz-progress-bar {
+    background-color: var(--temp-blue);
+}
+
+progress::-webkit-progress-value {
+    background-color: var(--temp-blue);
+}
+
+
+/**numbers**/
+
+.numbers {
+    background-color: var(--temp-blue);
+}
+
+.numbers-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.number {
+    color: #fff;
+    padding: 100px 0;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.num-l {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.num-l i {
+    font-size: 3.75rem;
+}
+
+.num-r {
+    justify-content: center;
+    display: flex;
+    flex-flow: column nowrap;
+    flex-grow: 2;
+    padding-left: 10px;
+}
+
+.num-r p {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.num-num {
+    font-size: 1.125rem;
+}
+
+.num-desc {
+    font-size: 0.75rem;
+}
+
+
+/**work**/
+
+.work-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.work-item {
+    width: calc(100% / 4);
+    position: relative;
+}
+
+.work-desc {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(33, 33, 33, 0.8);
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: #fff;
+    opacity: 0;
+    transition: 1s;
+}
+
+.work-item:hover .work-desc {
+    opacity: 1;
+}
+
+
+/**services**/
+
+.services {
+    background-color: var(--back-color);
+    padding: 70px 0;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.service-item {
+    text-align: center;
+    width: calc(100% / 4);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px;
+    box-sizing: border-box;
+}
+
+.serv-logo {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.serv-head {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.serv-desc {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 1.2px;
+    line-height: 25px;
+    color: var(--desc-color);
+}
+
+
+/**testimonials**/
+
+.testimonials {
+    background-color: var(--temp-blue);
+}
+
+.what {
+    font-size: 1.5rem;
+}
+
+.author {
+    margin-top: 25px;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+}
+
+.car-block {
+    text-align: center;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1.2px;
+    padding: 150px 40px;
+}
+
+
+/**clients**/
+
+.clients-wrapp {
+    padding: 50px 0 50px 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.client-block {
+    padding: 30px 0;
+    width: 200px;
+    display: flex;
+    flex: auto;
+    justify-content: center;
+}
+
+
+/**need project?**/
+
+.needproject {
+    background-color: var(--back-color);
+    padding: 100px 0;
+}
+
+.need-p-head-wrapp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.need-p-head {
+    text-align: center;
+    width: 700px;
+    margin-bottom: 40px;
+}
+
+.need-head {
+    margin-bottom: 25px;
+}
+
+
+/****/
+
+.line {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#name {
+    margin-right: 30px;
+}
+
+.line-inp {
+    flex-grow: 1;
+}
+
+input[type=text] {
+    font-family: 'Nunito Sans', sans-serif;
+    color: var(--desc-color);
+    font-size: 0.9375rem;
+    padding: 18px;
+    border: 0px solid black;
+    margin-bottom: 30px;
+}
+
+.line-two {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#title {
+    flex-grow: 1;
+}
+
+textarea {
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+    color: var(--desc-color);
+    font-size: 0.9375rem;
+    padding: 18px;
+    border: 0px solid black;
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+    resize: none;
+    margin-bottom: 30px;
+}
+
+.forms {
+    padding: 0 15px;
+}
+
+.line-four {
+    display: flex;
+    justify-content: center;
+}
+
+input[type=submit] {
+    padding: 23px 50px;
+    font-size: 0.75rem;
+    color: #fff;
+    background-color: var(--temp-blue);
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    border: 0px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+/**footer**/
+
+footer {
+    background-color: var(--main-black);
+    color: #fff;
+    padding: 100px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul li {
+    list-style: none;
+}
+
+.links {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.link-block {
+    padding: 0 60px;
+}
+
+.foot-head h3 {
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.125rem;
+}
+
+.contact,
+links,
+.foot-head p {
+    font-size: 0.9375rem;
+    font-family: 'Nunito Sans', sans-serif;
+    margin-bottom: 15px;
+}
+
+
+/**************************************/
