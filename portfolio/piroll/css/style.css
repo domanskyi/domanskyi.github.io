@@ -6,7 +6,7 @@
     --main-black: #191919;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:500|Nunito+Sans');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Nunito+Sans');
 
 /**BASE STYLES**/
 
@@ -34,6 +34,7 @@ html {
 
 .section-header {
     font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
     font-size: 1.875rem;
     letter-spacing: 1.2px;
     color: var(--main-black);
@@ -97,7 +98,7 @@ nav {
     text-decoration: none;
     color: var(--main-black);
     font-size: 1rem;
-    font-weight: bold;
+    font-weight: 500;
     letter-spacing: 1.3px;
     transition: 0.5s;
 }
@@ -120,6 +121,7 @@ nav {
 }
 
 .block h1 {
+    font-weight: normal;
     font-family: 'Montserrat', sans-serif;
     font-size: 2.375rem;
     color: var(--main-black);
@@ -132,6 +134,7 @@ nav {
     color: #fff;
     line-height: 25px;
     margin-bottom: 25px;
+    letter-spacing: 1px;
 }
 
 
@@ -186,7 +189,6 @@ nav {
 .progress-name {
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
     margin-bottom: 20px;
     letter-spacing: 2px;
 }
@@ -257,7 +259,6 @@ progress::-webkit-progress-value {
 .num-r p {
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 2px;
-    font-weight: bold;
     text-transform: uppercase;
 }
 
@@ -289,13 +290,13 @@ progress::-webkit-progress-value {
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(33, 33, 33, 0.8);
+    background-color: rgba(16, 201, 195, 0.9);
     justify-content: center;
     align-items: center;
     font-size: 3rem;
     color: #fff;
     opacity: 0;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .work-item:hover .work-desc {
@@ -321,11 +322,25 @@ progress::-webkit-progress-value {
     justify-content: center;
     padding: 20px 20px;
     box-sizing: border-box;
+    transition: 0.5s;
 }
 
 .serv-logo {
     font-size: 3rem;
     margin-bottom: 15px;
+    transition: 0.6s;
+}
+
+.service-item:hover {
+    transform: scale(1.1);
+}
+
+.service-item:hover .serv-logo {
+    color: var(--temp-blue);
+}
+
+.service-item:hover .serv-head {
+    color: var(--temp-blue);
 }
 
 .serv-head {
@@ -333,6 +348,8 @@ progress::-webkit-progress-value {
     text-transform: uppercase;
     font-size: 1rem;
     margin-bottom: 10px;
+    transition: 0.6s;
+    font-weight: normal;
 }
 
 .serv-desc {
@@ -385,6 +402,11 @@ progress::-webkit-progress-value {
     display: flex;
     flex: auto;
     justify-content: center;
+    transition: 0.5s;
+}
+
+.client-block:hover {
+    transform: scale(1.2);
 }
 
 
@@ -476,7 +498,6 @@ input[type=submit] {
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     border: 0px;
-    font-weight: bold;
     letter-spacing: 1px;
 }
 

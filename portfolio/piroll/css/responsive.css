@@ -1,0 +1,440 @@
+:root {
+    --back-color: #f8f9f9;
+    --temp-blue: #10c9c3;
+    --progress-bg: #d8d8d8;
+    --desc-color: #787878;
+    --main-black: #191919;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .work-item {
+        width: calc(100% / 2);
+    }
+    .service-item {
+        width: calc(100% / 2);
+    }
+    .what {
+        font-size: 1.2rem;
+    }
+    .forms {
+        padding: 0 15px;
+    }
+    footer {
+        padding: 100px 0;
+        flex-flow: column nowrap;
+    }
+    .foot-head,
+    .contact {
+        text-align: center;
+    }
+    /****/
+    nav {
+        flex-flow: column nowrap;
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+    }
+    .menu {
+        justify-content: center;
+        background-color: var(--back-color);
+        height: 90vh;
+    }
+    .menu ul {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    .menu ul li {
+        padding: 15px;
+    }
+    .menu a {
+        font-size: 1.4rem;
+    }
+    .logo-wrapper {
+        background-color: rgba(248, 249, 249, 0.7);
+        padding: 10px 0 10px 0;
+        height: 5vh;
+        transition: 0.5s;
+    }
+    .logo-wrapper:hover {
+        background-color: rgba(248, 249, 249, 1);
+    }
+    .toggler {
+        display: none;
+    }
+    .toggler-two {
+        background-color: rgba(248, 249, 249, 1);
+    }
+    /****/
+    .header-text {
+        justify-content: center;
+    }
+    .block {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .display-toggle {
+        display: none;
+    }
+    /****/
+    .skills-wrapper {
+        flex-flow: column nowrap;
+    }
+    .skills-block {
+        width: 100%;
+    }
+    .skill {
+        padding: 0;
+    }
+    .skill-container {
+        flex-flow: column nowrap;
+        display: flex;
+        align-items: center;
+    }
+    progress {
+        width: 90%;
+    }
+    .numbers-wrapper {
+        flex-flow: column nowrap;
+    }
+    .number {
+        padding: 20px 0;
+        flex-flow: column nowrap;
+    }
+    .num-l i {
+        font-size: 4.875rem;
+    }
+    .num-r {
+        margin-top: 10px;
+        margin-bottom: 15px;
+        padding-left: 0;
+        align-items: center;
+    }
+    .work-item {
+        width: calc(100% / 2);
+    }
+    .service-item {
+        width: calc(100% / 2);
+    }
+    .what {
+        font-size: 1.1rem;
+    }
+    .forms {
+        padding: 0 15px;
+    }
+    footer {
+        padding: 100px 0;
+        flex-flow: column nowrap;
+    }
+    .foot-head,
+    .contact {
+        text-align: center;
+    }
+    /****/
+    nav {
+        flex-flow: column nowrap;
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+    }
+    .menu {
+        justify-content: center;
+        background-color: var(--back-color);
+        height: 90vh;
+    }
+    .menu ul {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    .menu ul li {
+        padding: 15px;
+    }
+    .menu a {
+        font-size: 1.4rem;
+    }
+    .logo-wrapper {
+        background-color: rgba(248, 249, 249, 0.7);
+        padding: 10px 0 10px 0;
+        height: 5vh;
+        transition: 0.5s;
+    }
+    .logo-wrapper:hover {
+        background-color: rgba(248, 249, 249, 1);
+    }
+    .toggler {
+        display: none;
+    }
+    .toggler-two {
+        background-color: rgba(248, 249, 249, 1);
+    }
+    /****/
+    .header-text {
+        justify-content: center;
+    }
+    .block {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    .display-toggle {
+        display: none;
+    }
+    /****/
+    .about-desc {
+        padding: 0 10px;
+        font-size: 0.75rem;
+    }
+    .skills-wrapper {
+        flex-flow: column nowrap;
+    }
+    .skills-block {
+        width: 100%;
+    }
+    .skill {
+        padding: 0;
+    }
+    .skill-container {
+        flex-flow: column nowrap;
+        display: flex;
+        align-items: center;
+    }
+    progress {
+        width: 90%;
+    }
+    .numbers-wrapper {
+        flex-flow: column nowrap;
+    }
+    .number {
+        padding: 20px 0;
+        flex-flow: column nowrap;
+    }
+    .num-l i {
+        font-size: 4.875rem;
+    }
+    .num-r {
+        margin-top: 10px;
+        margin-bottom: 15px;
+        padding-left: 0;
+        align-items: center;
+    }
+    .work-item {
+        width: 100%;
+    }
+    .service-item {
+        width: 100%;
+    }
+    .what {
+        font-size: 1rem;
+    }
+    .line {
+        flex-flow: column nowrap;
+    }
+    #name {
+        margin-right: 0;
+    }
+    .forms {
+        padding: 0 15px;
+    }
+    footer {
+        padding: 100px 0;
+        flex-flow: column nowrap;
+    }
+    .link-block {
+        padding: 0 30px;
+    }
+    .foot-head,
+    .contact {
+        text-align: center;
+    }
+    /****/
+    nav {
+        flex-flow: column nowrap;
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+    }
+    .menu {
+        justify-content: center;
+        background-color: var(--back-color);
+        height: 92vh;
+    }
+    .menu ul {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    .menu ul li {
+        padding: 15px;
+    }
+    .menu a {
+        font-size: 1.4rem;
+    }
+    .logo-wrapper {
+        background-color: rgba(248, 249, 249, 0.7);
+        padding: 10px 0 10px 0;
+        height: 5vh;
+        transition: 0.5s;
+    }
+    .logo-wrapper:hover {
+        background-color: rgba(248, 249, 249, 1);
+    }
+    .toggler {
+        display: none;
+    }
+    .toggler-two {
+        background-color: rgba(248, 249, 249, 1);
+    }
+    /****/
+    .header-text {
+        justify-content: center;
+    }
+    .block {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        max-width: 100%;
+    }
+    .block h1 {
+        font-size: 2rem;
+    }
+    .block p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .display-toggle {
+        display: none;
+    }
+    /****/
+    .about-desc {
+        padding: 0 10px;
+        font-size: 0.75rem;
+    }
+    .skills-wrapper {
+        flex-flow: column nowrap;
+    }
+    .skills-block {
+        width: 100%;
+    }
+    .skill {
+        padding: 0;
+    }
+    .skill-container {
+        flex-flow: column nowrap;
+        display: flex;
+        align-items: center;
+    }
+    progress {
+        width: 90%;
+    }
+    .numbers-wrapper {
+        flex-flow: column nowrap;
+    }
+    .number {
+        padding: 20px 0;
+        flex-flow: column nowrap;
+    }
+    .num-l i {
+        font-size: 4.875rem;
+    }
+    .num-r {
+        margin-top: 10px;
+        margin-bottom: 15px;
+        padding-left: 0;
+        align-items: center;
+    }
+    .work-item {
+        width: 100%;
+    }
+    .service-item {
+        width: 100%;
+    }
+    .what {
+        font-size: 0.8rem;
+    }
+    .line {
+        flex-flow: column nowrap;
+    }
+    #name {
+        margin-right: 0;
+    }
+    .forms {
+        padding: 0 15px;
+    }
+    footer {
+        padding: 100px 0;
+        flex-flow: column nowrap;
+    }
+    .link-block {
+        padding: 0 10px;
+    }
+    .foot-head,
+    .contact {
+        text-align: center;
+    }
+    /****/
+    nav {
+        flex-flow: column nowrap;
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+    }
+    .menu {
+        justify-content: center;
+        background-color: var(--back-color);
+        height: 92vh;
+    }
+    .menu ul {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    .menu ul li {
+        padding: 15px;
+    }
+    .menu a {
+        font-size: 1.4rem;
+    }
+    .logo-wrapper {
+        background-color: rgba(248, 249, 249, 0.7);
+        padding: 10px 0 10px 0;
+        height: 5vh;
+        transition: 0.5s;
+    }
+    .logo-wrapper:hover {
+        background-color: rgba(248, 249, 249, 1);
+    }
+    .toggler {
+        display: none;
+    }
+    .toggler-two {
+        background-color: rgba(248, 249, 249, 1);
+    }
+    /****/
+    .header-text {
+        justify-content: center;
+    }
+    .block {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        max-width: 100%;
+    }
+    .block h1 {
+        font-size: 1.6rem;
+    }
+    .block p {
+        font-size: 1rem;
+    }
+}
