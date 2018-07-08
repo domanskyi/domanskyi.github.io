@@ -63,7 +63,7 @@ a {
 
 /*HOME PAGE*/
 .post-wrapper {
-    padding: 100px 0;
+    padding: 50px 0;
 }
 .line a {
     display: block;
@@ -170,6 +170,12 @@ footer {
 /**/
 /*MEDIA*/
 @media screen and (max-width: 900px) {
+    .tag {
+        font-size: 0.75rem;
+    }
+    .post-title {
+        font-size: 1.25rem;
+    }
     .post-wrapper {
         padding: 100px 25px;
     }
@@ -191,6 +197,7 @@ footer {
         padding: 40px 25px;
     }
 }
+
 @media screen and (max-width: 480px) {
     .footer-wrapper {
         flex-flow: column nowrap;
