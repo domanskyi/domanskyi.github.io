@@ -9,6 +9,7 @@
     --main: #626262;
     --tag: #b4ad9e;
     --second: #333333;
+    --form-bg: #f0f0f0;
 }
 
 * {
@@ -80,7 +81,91 @@ a {
 .box-img {
     margin-bottom: 30px;
 }
+/*form*/
+#form {
+    background-color: var(--form-bg);
 
+    margin-bottom: 100px;
+}
+.form-wrapper {
+    padding: 80px 0;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.email-wrapper {
+    border-bottom: 1px solid var(--second);
+}
+.email-wrapper form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-wrapper h1 {
+    color: var(--second);
+}
+.email-wrapper input[type="email"], .email-wrapper button {
+    margin-right: 15px;
+    border: 0;
+    background: rgba(0, 0, 0, 0);
+    font-family: var(--playfair);
+    color: var(--second);
+}
+.email-wrapper input[type="email"] {
+    font-size: 0.875rem;
+}
+.email-wrapper button {
+    font-size: 1.875rem;  
+}
+/**/
+.load-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.load-more button {
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid var(--main);
+    font-family: var(--playfair);
+    font-size: 1.25rem;
+    color: var(--main);
+    padding: 20px 34px;
+}
+/*footer*/
+footer {
+    background-color: var(--form-bg);
+    padding: 40px 0;
+}
+.footer-wrapper {
+    justify-content: space-between;
+}
+.left, .right, .footer-wrapper{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+.left a{
+    color: var(--black);
+    font-family: var(--playfair);
+    font-size: 0.875rem;
+}
+.terms {
+    margin-right: 17px;
+}
+.right p{
+    color: var(--black);
+    font-family: var(--playfair);
+    font-size: 0.875rem;
+}
+.right i {
+    margin-left: 17px;
+    color: var(--main);
+    font-size: 1rem;    
+}
+/**/
 /*MEDIA*/
 @media screen and (max-width: 900px) {
     .post-wrapper {
@@ -96,5 +181,16 @@ a {
         padding: 0 25px;
 
         margin-bottom: 100px;
+    }
+    footer {
+        padding: 40px 25px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .footer-wrapper {
+        flex-flow: column nowrap;
+    }
+    .left {
+        margin-bottom: 20px;
     }
 }
