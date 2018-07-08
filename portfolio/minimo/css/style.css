@@ -182,7 +182,7 @@ footer {
         font-size: 1.25rem;
     }
     .post-wrapper {
-        padding: 100px 25px;
+        padding: 50px 25px 0 25px;
     }
     .line {
         flex-flow: column nowrap;
