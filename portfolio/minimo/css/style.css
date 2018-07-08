@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Playfair+Display:400,400i,700|Ubuntu:300,400');
+
+:root {
+    /*fonts*/
+    --playfair: 'Playfair Display', serif;
+    --ubuntu: 'Ubuntu', sans-serif;
+    /*colors*/
+    --black: #000000;
+    --main: #626262;
+    --tag: #b4ad9e;
+    --second: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 16px;
+}
+a {
+    text-decoration: none;
+}
+.img-responsive {
+    width: 100%;
+}
+
+.container {
+    max-width: 1060px;
+    margin: auto;
+}
+.container-small {
+    max-width: 900px;
+    margin: auto;
+}
+
+/*FOR ALL PAGES*/
+.tag {
+    margin-bottom: 30px;
+
+    text-transform: uppercase;
+    font-family: var(--ubuntu);
+    font-size: 0.875rem;
+    font-weight: 300;
+    color: var(--tag);
+}
+.post-title {
+    margin-bottom: 40px;
+
+    font-family: var(--playfair);
+    font-size: 1.875rem;
+    color: var(--main);
+}
+.post-text {
+    font-family: var(--playfair);
+    font-size: 0.875rem;
+    color: var(--main);
+}
+.post-main {
+    margin-bottom: 80px;
+}
+
+/*HOME PAGE*/
+.post-wrapper {
+    padding: 100px 0;
+}
+.line a {
+    display: block;
+}
+.line {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    margin-bottom: 100px;
+}
+.box {
+    max-width: 420px;
+}
+.box-img {
+    margin-bottom: 30px;
+}
+
+/*MEDIA*/
+@media screen and (max-width: 900px) {
+    .post-wrapper {
+        padding: 100px 25px;
+    }
+    .line {
+        flex-flow: column nowrap;
+
+        margin-bottom: 0;
+    }
+    .box {
+        max-width: 100%;
+        padding: 0 25px;
+
+        margin-bottom: 100px;
+    }
+}
