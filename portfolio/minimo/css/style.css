@@ -37,7 +37,7 @@ a {
 
 /*FOR ALL PAGES*/
 .tag {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 
     text-transform: uppercase;
     font-family: var(--ubuntu);
@@ -46,7 +46,7 @@ a {
     color: var(--tag);
 }
 .post-title {
-    margin-bottom: 40px;
+    margin-bottom: 15px;
 
     font-family: var(--playfair);
     font-size: 1.875rem;
@@ -58,7 +58,7 @@ a {
     color: var(--main);
 }
 .post-main {
-    margin-bottom: 80px;
+    margin-bottom: 10px;
 }
 
 /*HOME PAGE*/
@@ -79,13 +79,13 @@ a {
     max-width: 420px;
 }
 .box-img {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 /*form*/
 #form {
     background-color: var(--form-bg);
 
-    margin-bottom: 100px;
+    margin: 100px 0 100px 0;
 }
 .form-wrapper {
     padding: 80px 0;
@@ -94,7 +94,9 @@ a {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
+
 .email-wrapper {
     border-bottom: 1px solid var(--second);
 }
@@ -124,7 +126,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 100px;
+    margin: 100px 0;
 }
 .load-more button {
     background-color: rgba(0, 0, 0, 0);
@@ -180,7 +182,10 @@ footer {
         max-width: 100%;
         padding: 0 25px;
 
-        margin-bottom: 100px;
+        margin-top: 50px;
+    }
+    #line {
+        margin: 100px 0 50px 0;
     }
     footer {
         padding: 40px 25px;
