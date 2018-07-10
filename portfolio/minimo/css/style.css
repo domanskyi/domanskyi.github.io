@@ -299,38 +299,98 @@ footer {
     padding: 40px 0;
     margin-bottom: 40px;
 }
-.other-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-flow: row nowrap;
-}
-.other-wrapper a {
-    display: block;
+.line-sec {
+    margin-bottom: 0px;
 }
 .other-box {
-    max-width: 274px;
+    max-width: 270px;
+    color: var(--main);
 }
-.other-box h1{
-    margin-top: 10px;
-    margin-bottom: 0px;
-    font-size: 1rem;
+.other-box h1 {
+    font-size: 1.25rem;
+    margin-bottom: 0;
 }
+
+.other-box img {
+    margin-bottom: 15px;
+}
+/**/
+/*comments*/
+.com-value {
+    margin-bottom: 20px;
+}
+.comment {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: row nowrap;
+}
+.com-left {
+    margin-right: 20px;
+}
+.com-author, .com-text {
+    font-family: var(--playfair);
+    font-size: 0.875rem;
+    color: var(--main);
+}
+.com-author {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.com-text {
+    margin-bottom: 15px;
+}
+.right-textarea {
+    width: 100%;
+    padding-right: 25px;
+}
+.comment-area {
+    margin-top: 5px;
+    width: 100%;
+    padding: 10px;
+    font-family: var(--playfair);
+    color: var(--main);
+    font-size: 0.875rem;
+    border: 1px solid var(--form-bg);
+    resize: none;
+}
+.comment-area::-moz-placeholder {
+    text-transform: uppercase;
+    font-family: var(--ubuntu);
+}
+.connect {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    margin-bottom: 80px;
+}
+.connect p {
+    margin-right: 10px;
+}
+.connect i {
+    margin-left: 15px;
+    font-size: 0.875rem;
+    color: var(--tag);
+}
+
 /**/
 /*MEDIA*/
 @media screen and (max-width: 900px) {
-    .share {
+    .connect {
         padding: 0 25px;
     }
-    .other-posts {
-        width: 100%;
+    .com-value {
+        padding: 0 25px;
     }
-    .other-wrapper {
-        width: 100%;
-        flex-flow: column nowrap;
+    .comment {
+        padding: 0 25px;
     }
     .other-box {
-        width: 100%;
+        max-width: 100%;
+        padding: 0 25px;
+        margin-bottom: 50px;
+    }
+    .share {
+        padding: 0 25px;
     }
     nav {
         padding: 25px 25px;
