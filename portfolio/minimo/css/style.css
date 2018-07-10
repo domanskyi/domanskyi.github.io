@@ -4,6 +4,7 @@
     /*fonts*/
     --playfair: 'Playfair Display', serif;
     --ubuntu: 'Ubuntu', sans-serif;
+    --inconsolata: 'Inconsolata', monospace;
     /*colors*/
     --black: #000000;
     --main: #626262;
@@ -60,7 +61,97 @@ a {
 .post-main {
     margin-bottom: 10px;
 }
-
+/*overlay*/
+.menu-overlay {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(33, 33, 33, 0.9);
+    width: 0%;
+    height: 100vh;
+    overflow-x: hidden;
+    transition: 0.3s;
+}
+.menu-content {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.menu, .close-btn {
+    display: flex;
+}
+.close-btn {
+    font-size: 1.875rem;
+    color: #fff;
+    padding: 30px 30px;
+    justify-content: flex-end;
+}
+.close-btn i {
+    cursor: pointer;
+}
+.menu {
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.menu li {
+    list-style: none;
+    margin-bottom: 25px;
+}
+.menu a {
+    text-transform: uppercase;
+    font-family: var(--playfair);
+    color: #fff;
+    font-size: 1.875rem;
+}
+.menu-btn {
+    cursor: pointer;
+    justify-content: center;
+    padding: 5px 0;
+    text-transform: uppercase;
+    font-family: var(--inconsolata);
+    color: var(--black);
+    font-size: 1.875rem;
+    letter-spacing: 3px;   
+    display: none;
+}
+/*navbar*/
+nav {
+    padding: 25px 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-left {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    flex-grow: 2;
+}
+.nav-left a {
+    text-transform: uppercase;
+    font-family: var(--inconsolata);
+    color: var(--black);
+    font-size: 1.875rem;
+    letter-spacing: 3px;
+}
+.nav-right {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    flex-grow: 3;
+}
+.nav-right a {
+    font-family: var(--playfair);
+    font-size: 0.875rem;
+    color: var(--main);
+    text-transform: uppercase;
+}
 /*HOME PAGE*/
 .post-wrapper {
     padding: 50px 0;
@@ -175,6 +266,9 @@ footer {
 /**/
 /*MEDIA*/
 @media screen and (max-width: 900px) {
+    nav {
+        padding: 25px 25px;
+    }
     .tag {
         font-size: 0.75rem;
     }
@@ -201,6 +295,15 @@ footer {
     }
     footer {
         padding: 40px 25px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .visible-toggler {
+        display: none;
+    }
+    .menu-btn { 
+        display: flex;
     }
 }
 
