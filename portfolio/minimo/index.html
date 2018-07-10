@@ -10,20 +10,13 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <script>
-        function openMenu() {
-            document.getElementById('menu-overlay').style.width = "100%";
-        }
-        function closeMenu() {
-            document.getElementById('menu-overlay').style.width = "0%";
-        }
-    </script>
     <div class="menu-overlay" id="menu-overlay">
         <div class="menu-content">
             <div class="close-btn">
                 <i class="fas fa-times" onclick="closeMenu()"></i>
             </div>
             <div class="menu">
+                <li><a href="index.html">main page</a></li>
                 <li><a href="#">lifestyle</a></li>
                 <li><a href="#">photodiary</a></li>
                 <li><a href="#">music</a></li>
@@ -174,5 +167,13 @@
             </div>
         </div>
     </footer>
+    <script>
+            function openMenu() {
+                document.getElementById('menu-overlay').style.width = "100%";
+            }
+            function closeMenu() {
+                document.getElementById('menu-overlay').style.width = "0%";
+            }
+    </script>    
 </body>
 </html>
