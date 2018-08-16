@@ -9,7 +9,8 @@ html, body {
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Segoe UI', monospace;
+    box-sizing: border-box;
 }
 /*BASE STYLES*/
 a {
@@ -27,7 +28,7 @@ a {
     -o-background-size: cover;
     background-size: cover;
 
-    box-sizing: border-box;
+    
 }
 
 .content {
@@ -35,6 +36,20 @@ a {
     margin: auto;
 
     background-color: rgba(255, 255, 255, 0.8);
+}
+.search {
+    width: 100%;
+}
+
+input[type='text'] {
+    background: none;
+    border: none;
+    font-size: 1.75rem;
+    color: var(--main-font-color);
+    padding: 15px;
+    display: flex;
+    font-weight: bold;
+    padding-left: 125px;
 }
 
 .links {
@@ -67,14 +82,17 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 10px;
-    color: var(--reverse-font-color);
+    margin-right: 9px;
+    /* color: var(--reverse-font-color); */
+    color: var(--main-font-color);
 
-    font-size: 1.625rem;
+    /* font-size: 1.25rem; */
+    font-size: 1.5rem;
+    padding: 1px;
     width: 35px;
     height: 35px;
-    border-radius: 5px;
-    background-color: var(--main-font-color);
+    border-radius: 50%;
+    /* background-color: var(--main-font-color); */
 }
 
 .item-title {
