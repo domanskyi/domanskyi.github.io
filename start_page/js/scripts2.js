@@ -1,3 +1,17 @@
+function fillInput(key) {
+    document.getElementById('search_input').value = key + ' ';
+    document.getElementById('search_input').focus();
+}
+
+var x = document.getElementsByClassName('ikey');
+
+for (let index = 0; index < x.length; index++) {
+    x[index].addEventListener('click', function() {
+        fillInput(x[index].id);
+    }, false)
+    
+}
+
 document.onkeypress = function (e) {
     if(e.key == 'Enter') {
         inputQuery = document.getElementById('search_input').value;
@@ -63,9 +77,4 @@ function r(firstLink, secondLink = false, query = true) {
     } else {
         window.open(secondLink+query, "_self");
     }
-}
-
-function fillInput(key) {
-    document.getElementById('search_input').value = key + ' ';
-    document.getElementById('search_input').focus();
 }
