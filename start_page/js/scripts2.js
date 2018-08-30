@@ -64,3 +64,8 @@ function r(firstLink, secondLink = false, query = true) {
         window.open(secondLink+query, "_self");
     }
 }
+
+function fillInput(key) {
+    document.getElementById('search_input').value = key + ' ';
+    document.getElementById('search_input').focus();
+}

@@ -29,6 +29,22 @@ body {
     align-items: center;
 }
 
+.search-bar {
+    display: flex;
+    flex: auto;
+    max-width: 1300px;
+    margin: auto;
+    flex-flow: column nowrap;
+}
+
+p.with, p.without {
+    font-family: 'VT323', monospace;
+    text-align: center;
+    color: var(--main-color);
+    text-shadow: 0px 1px 10px rgba(255, 255, 255, 100);
+    font-size: 0.9rem;
+}
+
 input[type="text"] {
     font-size: 2.5rem;
     background: none;
@@ -37,7 +53,8 @@ input[type="text"] {
     border: none;
     width: auto;
     font-family: 'VT323', monospace;
-    width: 360px;
+    width: 100%;
+    text-align: center;
 }
 
 input::-webkit-input-placeholder {
