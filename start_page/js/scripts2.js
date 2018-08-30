@@ -30,8 +30,10 @@ document.onkeypress = function (e) {
                 window.open('https://duckduckgo.com/?q='+inputQuery, "_self");
                 break;
         }
-
+    } else if(e.key == 's') {
+        document.getElementById('search_input').focus();
     }
+
 }
 
 function separateQuery(query) {
