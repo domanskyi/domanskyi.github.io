@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=VT323');
+
+:root {
+    --main-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-size: 16px;
+}
+
+body {
+    background: url(../img/alexei-leonov-space-walk.jpg) no-repeat center center fixed; 
+    background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+}
+
+.search-section {
+    display: flex;
+    padding: 100px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="text"] {
+    font-size: 2.5rem;
+    background: none;
+    color: var(--main-color);
+    text-shadow: 0px 1px 10px rgba(255, 255, 255, 100);
+    border: none;
+    width: auto;
+    font-family: 'VT323', monospace;
+}
+
+input::-webkit-input-placeholder {
+    color: var(--main-color);
+    opacity: 1;
+}
+
+input::-moz-placeholder {
+    color: var(--main-color);
+    opacity: 1;
+}
+
+input::-ms-placeholder {
+    color: var(--main-color);
+    opacity: 1;
+}
+
+input::placeholder {
+    color: var(--main-color);
+    opacity: 1;
+}
+
+.links-sections {
+    padding: 0 200px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.links-block, .links-block a{
+    color: var(--main-color);
+    text-decoration: none;
+    font-family: 'VT323', monospace;
+    text-shadow: 0px 1px 4px rgba(255, 255, 255, 100);
+    font-size: 1.7rem;  
+}
+
+.links-block ul li {
+    list-style: none;
+    margin-bottom: 3px;
+}
+
+.links-block-header {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
