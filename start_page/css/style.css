@@ -37,6 +37,7 @@ input[type="text"] {
     border: none;
     width: auto;
     font-family: 'VT323', monospace;
+    width: 360px;
 }
 
 input::-webkit-input-placeholder {
