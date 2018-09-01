@@ -41,7 +41,7 @@ document.onkeypress = function (e) {
                 r('https://www.reddit.com/', 'https://www.reddit.com/search?q=', query);
                 break;
             case 'tr':
-                r('http://rutracker.net/forum/index.php', 'http://rutracker.net/forum/search_cse.php?q=', query);
+                r('http://rutracker.net/forum/index.php', 'https://rutracker.net/forum/tracker.php?nm=', query);
                 break;
             default:
                 window.open('https://duckduckgo.com/?q='+inputQuery, "_self");
