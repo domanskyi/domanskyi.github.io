@@ -1,0 +1,22 @@
+@font-face {
+    font-family: Nitti;
+    src: url(../fonts/nitti_medium.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* @font-face {
+    font-family: Nitti;
+    src: url(../fonts/nitti_light.ttf);
+    font-weight: lighter;
+    font-style: normal;
+} */
+
+@font-face {
+    font-family: Nitti;
+    src: url(../fonts/nitti_black.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+
