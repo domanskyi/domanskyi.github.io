@@ -98,4 +98,28 @@
     <a href="/portfolio/piroll/index.html">Piroll - Free PSD Portfolio</a>
     <a href="/portfolio/minimo/index.html">minimo</a> -->
 </body>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        let city = 'London';
+        let key = '715eacf8477433cb85dd150a46781203';
+
+        $.ajax({
+            url:'api.openweathermap.org/data/2.5/weather',
+            dataType: 'json',
+            type: 'GET',
+            data: {
+                q: city,
+                appid: key,
+                units: 'metric',
+            }, 
+            success: function(data) {
+                console.log(data.weather);
+            }
+        });
+    });
+</script>
 </html>
